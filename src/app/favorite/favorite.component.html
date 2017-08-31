@@ -1,0 +1,7 @@
+<span class="glyphicon"
+      [class.glyphicon-star]="isChecked"
+      [class.glyphicon-star-empty]="!isChecked"
+      (click)="onFavorite()"></span>
+
+<input [(ngModel)]="text"/>
+<span>{{text | titlecase }}</span>
