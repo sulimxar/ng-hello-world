@@ -7,6 +7,7 @@ import { LikeComponent } from "./like.component";
 import { CourseComponent } from './course/course.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { MytitlePipe } from './mytitle.pipe';
+import { HeartComponent } from './heart/heart.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { MytitlePipe } from './mytitle.pipe';
     LikeComponent,
     CourseComponent,
     FavoriteComponent,
-    MytitlePipe
+    MytitlePipe,
+    HeartComponent
   ],
   bootstrap: [AppComponent]
 })

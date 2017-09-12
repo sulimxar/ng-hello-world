@@ -10,5 +10,10 @@ Like:
 <fblike></fblike>
 <app-course></app-course>
 <app-favorite></app-favorite>
+<br/>
+<app-heart
+  [isActive]="tweet.isLiked"
+  [likesCount]="tweet.likesCount"
+  ></app-heart>
 
 
