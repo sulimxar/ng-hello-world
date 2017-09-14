@@ -5,8 +5,9 @@
     "\\src\\app",
     "\\src\\app\\course",
     "\\src\\app\\favorite",
+    "\\src\\app\\heart",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\app.component.html",
+  "SelectedNode": "\\src\\app\\like.component.ts",
   "PreviewInSolutionExplorer": false
 }
