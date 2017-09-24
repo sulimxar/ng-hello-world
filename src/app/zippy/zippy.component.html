@@ -1,0 +1,13 @@
+<div class="panel panel-default" (click)="onTitleClicked()">
+  <div class="panel-heading">
+    <span>{{title}}</span>
+    <span class="glyphicon"
+      [ngClass]="{
+        'glyphicon-chevron-up': isExpanded,
+        'glyphicon-chevron-down': !isExpanded
+      }" style="float:right"></span>
+  </div>
+  <div class="panel-body" *ngIf="isExpanded">
+    <ng-content></ng-content>
+  </div>
+</div>
