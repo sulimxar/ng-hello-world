@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -11,14 +11,18 @@ import { HeartComponent } from './heart/heart.component';
 import { ZippyComponent } from './zippy/zippy.component';
 import { TitleDirective } from './title.directive';
 import { CourseAdminComponent } from './course-admin/course-admin.component';
+import { SignupFormComponent } from "./signup-form/signup-form.component";
+import { PasswordFormComponent } from './password-form/password-form.component';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
+    SignupFormComponent,
     LikeComponent,
     CourseComponent,
     FavoriteComponent,
@@ -26,7 +30,8 @@ import { CourseAdminComponent } from './course-admin/course-admin.component';
     HeartComponent,
     ZippyComponent,
     TitleDirective,
-    CourseAdminComponent
+    CourseAdminComponent,
+    PasswordFormComponent
   ],
   bootstrap: [AppComponent]
 })
